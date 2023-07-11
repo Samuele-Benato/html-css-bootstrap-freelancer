@@ -10,12 +10,29 @@
   padding: 0;
 }
 
-section,
-footer {
-  min-height: 50px;
+/* GENERAL */
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* HEADER */
+#header {
+  height: 120px;
+  line-height: 120px;
+
+  background: var(--bg-first-and-last);
+}
 
 nav {
   background: var(--bg-first-and-last);
@@ -41,6 +58,12 @@ nav {
 
 #footer-top {
   background: var(--bg-footer);
+}
+
+#footer-top .fa-brands {
+  width: 30px;
+  height: 30px;
+  color: white;
 }
 /* FOOTER BOTTOM */
 

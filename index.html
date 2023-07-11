@@ -29,77 +29,206 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header id="header">
-        <nav class="navbar">
-            <div class="container">
-              <a class=" navbar-brand text-white" href="#">START BOOTSTRAP</a>
-              <div class="header-links d-none d-md-block">
-                <a class=" navbar-brand text-white" href="#">PORTFOLIO</a>
-                <a class=" navbar-brand text-white" href="#">ABOUT</a>
-                <a class=" navbar-brand text-white" href="#">CONTACT</a>
-              </div>
-              <button class="d-md-none navbar-toggler" type="button">
-                <span class="d-md-none navbar-toggler-icon "></span>
-              </button>
-          </nav>
+    <header class="" id="header">
+      <nav class="navbar">
+        <div class="container">
+          <a class="h1 navbar-brand text-white" href="#">START BOOTSTRAP</a>
+          <div class="header-links d-none d-md-block">
+            <a class="navbar-brand text-white" href="#">PORTFOLIO</a>
+            <a class="navbar-brand text-white" href="#">ABOUT</a>
+            <a class="navbar-brand text-white" href="#">CONTACT</a>
+          </div>
+          <button class="d-md-none navbar-toggler" type="button">
+            <span class="d-md-none navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
     </header>
     <!-- START BOOTSTRAP -->
-    <section id="start-bootstrap">
-        
+    <section class="py-4 text-center text-white" id="start-bootstrap">
+      <div class="avatar">
+        <img src="./bootstrap_freelancer/img/avatar.svg" alt="avatar" />
+      </div>
+      <h1 class="py-4">START BOOTSRAP</h1>
+      <div class="pb-3 star h3">----<i class="fa-solid fa-star"></i>----</div>
+      <h3 class="h5">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
     </section>
     <!-- PORTFOLIO -->
-    <section id="portfolio">
+    <section class="py-4 text-center" id="portfolio">
+      <h2 class="py-4">PORTFOLIO</h2>
+      <div class="pb-3 star h3">----<i class="fa-solid fa-star"></i>----</div>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4"></div>
-          <div class="col-12 col-md-6 col-lg-4"></div>
-          <div class="col-12 col-md-6 col-lg-4"></div>
-          <div class="col-12 col-md-6 col-lg-4"></div>
-          <div class="col-12 col-md-6 col-lg-4"></div>
-          <div class="col-12 col-md-6 col-lg-4"></div>
+          <div class="py-3 col-12 col-md-6 col-lg-4">
+            <img
+              class="rounded-4"
+              src="./bootstrap_freelancer/img/cabin.png"
+              alt="capanna"
+            />
+          </div>
+          <div class="py-3 col-12 col-md-6 col-lg-4">
+            <img
+              class="rounded-4"
+              src="./bootstrap_freelancer/img/cake.png"
+              alt="torta"
+            />
+          </div>
+          <div class="py-3 col-12 col-md-6 col-lg-4">
+            <img
+              class="rounded-4"
+              src="./bootstrap_freelancer/img/circus.png"
+              alt="circo"
+            />
+          </div>
+          <div class="py-3 col-12 col-md-6 col-lg-4">
+            <img
+              class="rounded-4"
+              src="./bootstrap_freelancer/img/game.png"
+              alt="videogioco"
+            />
+          </div>
+          <div class="py-3 col-12 col-md-6 col-lg-4">
+            <img
+              class="rounded-4"
+              src="./bootstrap_freelancer/img/safe.png"
+              alt="cassaforte"
+            />
+          </div>
+          <div class="py-3 col-12 col-md-6 col-lg-4">
+            <img
+              class="rounded-4"
+              src="./bootstrap_freelancer/img/submarine.png"
+              alt="sottomarino"
+            />
+          </div>
         </div>
       </div>
     </section>
     <!-- ABOUT -->
-    <section id="about">
+    <section class="py-4 text-center text-white" id="about">
+      <h2 class="py-4">ABOUT</h2>
+      <div class="pb-3 star h3">----<i class="fa-solid fa-star"></i>----</div>
       <div class="container">
-        <div class="about"></div>
-
-        <div class="row">
-            <div class="col-10 col-md-5"></div>
-            <div class="col-10 col-md-5"></div>
+        <div class="row text-start justify-content-around">
+          <div class="col-10 col-md-5">
+            <p class="h4 py-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              aspernatur ut quas sapiente eius amet tenetur obcaecati maxime est
+              error, perspiciatis temporibus maiores cum, non inventore?
+              Inventore minus perferendis iste.
+            </p>
+          </div>
+          <div class="col-10 col-md-5">
+            <p class="h4 py-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              aspernatur ut quas sapiente eius amet tenetur obcaecati maxime est
+              error, perspiciatis temporibus maiores cum, non inventore?
+              Inventore minus perferendis iste.
+            </p>
+          </div>
         </div>
-        
-        <div class="download"></div>
       </div>
+
+      <button type="button" class="btn btn-outline-light">download</button>
     </section>
     <!-- CONTACT ME -->
-    <section id="contact-me">
+    <section class="py-4" id="contact-me">
+      <h2 class="py-4 text-center">CONTACT ME</h2>
+      <div class="pb-3 star h3 text-center">
+        ----<i class="fa-solid fa-star"></i>----
+      </div>
       <div class="container">
         <div class="contact-me"></div>
 
         <div class="row">
-            <div class="col-12"></div>
-            <div class="col-12"></div>
+          <div class="col-12">
+            <div class="form-floating">
+              <textarea class="form-control" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Name</label>
+            </div>
+            <form class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInputValue"
+              />
+              <label for="floatingInputValue">Email address</label>
+            </form>
+            <div class="form-floating">
+              <textarea class="form-control" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Phone Number</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                id="floatingTextarea2"
+                style="height: 150px"
+              ></textarea>
+              <label for="floatingTextarea2">Message</label>
+            </div>
+          </div>
+          <div class="send">
+            <button type="button" class="btn btn-success">Send</button>
+          </div>
         </div>
-        
       </div>
     </section>
     <!-- FOOTER TOP -->
-    <section id="footer-top">
+    <section class="py-4 text-white text-center" id="footer-top">
       <div class="container">
-
         <div class="row">
-            <div class="col-12 col-md-4"></div>
-            <div class="col-12 col-md-4"></div>
-            <div class="col-12 col-md-4"></div>
+          <div class="col-12 col-md-4">
+            <h3>LOCATION</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3>AROUND THE WEB</h3>
+            <ul class="d-flex justify-content-center">
+              <li class="px-1">
+                <span class="p-3 border border-1 rounded-circle">
+                  <a href="#">
+                    <i class="h2 fa-brands fa-facebook-f"></i>
+                  </a>
+                </span>
+              </li>
+              <li class="px-1">
+                <span class="p-3 border border-1 rounded-circle">
+                  <a href="#">
+                    <i class="h2 fa-brands fa-google-plus-g"></i>
+                  </a>
+                </span>
+              </li>
+              <li class="px-1">
+                <span class="p-3 border border-1 rounded-circle">
+                  <a href="#">
+                    <i class="h2 fa-brands fa-twitter"></i>
+                  </a>
+                </span>
+              </li>
+              <li class="px-1">
+                <span class="p-3 border border-1 rounded-circle">
+                  <a href="#">
+                    <i class="h2 fa-brands fa-linkedin-in"></i>
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3>ABOUT FREELANCER</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              magnam illum harum adipisci quod.
+            </p>
+          </div>
         </div>
-        
       </div>
     </section>
     <!-- FOOTER BOTTOM -->
-    <footer id="footer-bottom">
-      <div class="copyright"></div>
+    <footer class="py-4 text-white text-center" id="footer-bottom">
+      <div class="copyright">
+        <a href="#">copyright</a>
+      </div>
     </footer>
   </body>
 </html>
