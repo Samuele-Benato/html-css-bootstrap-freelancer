@@ -20,6 +20,11 @@ li {
   list-style-type: none;
 }
 
+::placeholder {
+  color: var(--bg-first-and-last);
+  opacity: 1;
+}
+
 /* HEADER */
 #header {
   height: 120px;
