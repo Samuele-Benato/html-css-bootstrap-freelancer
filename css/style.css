@@ -4,12 +4,6 @@
   --bg-footer: #3a546d;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* GENERAL */
 
 .avatar {
@@ -54,6 +48,14 @@ nav {
 
 /* CONTACT ME */
 
+.form-text-color {
+  color: var(--bg-first-and-last);
+}
+
+.send .btn-lg {
+  background: var(--bg-light-green);
+}
+
 /* FOOTER TOP */
 
 #footer-top {
@@ -61,10 +63,23 @@ nav {
 }
 
 #footer-top .fa-brands {
-  width: 30px;
-  height: 30px;
   color: white;
 }
+
+.about_freelancer a {
+  color: var(--bg-light-green);
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* FOOTER BOTTOM */
 
 #footer-bottom {

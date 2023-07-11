@@ -32,15 +32,17 @@
     <header class="" id="header">
       <nav class="navbar">
         <div class="container">
-          <a class="h1 navbar-brand text-white" href="#">START BOOTSTRAP</a>
-          <div class="header-links d-none d-md-block">
+          <a class="fs-2 navbar-brand text-white" href="#">START BOOTSTRAP</a>
+          <div class="fs-6 header-links d-none d-md-block">
             <a class="navbar-brand text-white" href="#">PORTFOLIO</a>
             <a class="navbar-brand text-white" href="#">ABOUT</a>
             <a class="navbar-brand text-white" href="#">CONTACT</a>
           </div>
-          <button class="d-md-none navbar-toggler" type="button">
-            <span class="d-md-none navbar-toggler-icon"></span>
-          </button>
+          <div class="ham-menu d-md-none">
+            <button class="navbar-toggler border-white" type="button">
+              <span class="d-md-none navbar-toggler-icon"></span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -50,13 +52,13 @@
         <img src="./bootstrap_freelancer/img/avatar.svg" alt="avatar" />
       </div>
       <h1 class="py-4">START BOOTSRAP</h1>
-      <div class="pb-3 star h3">----<i class="fa-solid fa-star"></i>----</div>
+      <div class="fs-3 pb-3 star">----<i class="fa-solid fa-star"></i>----</div>
       <h3 class="h5">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
     </section>
     <!-- PORTFOLIO -->
     <section class="py-4 text-center" id="portfolio">
       <h2 class="py-4">PORTFOLIO</h2>
-      <div class="pb-3 star h3">----<i class="fa-solid fa-star"></i>----</div>
+      <div class="fs-3 pb-3 star">----<i class="fa-solid fa-star"></i>----</div>
       <div class="container">
         <div class="row">
           <div class="py-3 col-12 col-md-6 col-lg-4">
@@ -107,68 +109,98 @@
     <!-- ABOUT -->
     <section class="py-4 text-center text-white" id="about">
       <h2 class="py-4">ABOUT</h2>
-      <div class="pb-3 star h3">----<i class="fa-solid fa-star"></i>----</div>
+      <div class="fs-3 pb-3 star">----<i class="fa-solid fa-star"></i>----</div>
       <div class="container">
-        <div class="row text-start justify-content-around">
-          <div class="col-10 col-md-5">
-            <p class="h4 py-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              aspernatur ut quas sapiente eius amet tenetur obcaecati maxime est
-              error, perspiciatis temporibus maiores cum, non inventore?
-              Inventore minus perferendis iste.
+        <div class="row text-start justify-content-center">
+          <div class="col-8 col-md-5">
+            <p class="fs-4 py-3">
+              Freelancer is a free bootstrap theme created by Bootstrap. The
+              download includes the complete source files including HTML, CSS
+              and JavaScript as well as optional LESS stylesheets for easy
+              customization.
             </p>
           </div>
-          <div class="col-10 col-md-5">
-            <p class="h4 py-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              aspernatur ut quas sapiente eius amet tenetur obcaecati maxime est
-              error, perspiciatis temporibus maiores cum, non inventore?
-              Inventore minus perferendis iste.
+          <div class="col-8 col-md-5">
+            <p class="fs-4 py-3">
+              Whether you're a student looking to showcase your work, a
+              professional looking to share your projects, this template is
+              perfect starting point!
             </p>
           </div>
         </div>
       </div>
-
-      <button type="button" class="btn btn-outline-light">download</button>
+      <div class="download-about">
+        <button type="button" class="btn btn-outline-light btn-lg">
+          <i class="fa-solid fa-download"></i> Download
+        </button>
+      </div>
     </section>
     <!-- CONTACT ME -->
     <section class="py-4" id="contact-me">
       <h2 class="py-4 text-center">CONTACT ME</h2>
-      <div class="pb-3 star h3 text-center">
+      <div class="fs-3 pb-3 star text-center">
         ----<i class="fa-solid fa-star"></i>----
       </div>
       <div class="container">
-        <div class="contact-me"></div>
-
-        <div class="row">
-          <div class="col-12">
-            <div class="form-floating">
-              <textarea class="form-control" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Name</label>
-            </div>
-            <form class="form-floating">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingInputValue"
-              />
-              <label for="floatingInputValue">Email address</label>
+        <div class="row justify-content-center">
+          <div class="col-8 col-md-10">
+            <!-- FORM -->
+            <form
+              action="http://learning.tizianonicolai.com/request-catcher/"
+              method="post"
+              class="form-text-color"
+            >
+              <!-- NAME -->
+              <div class="border-bottom mb-2">
+                <input
+                  class="border-0 w-100 py-3 fs-4"
+                  id="Name"
+                  name="Name"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <!-- EMAIL -->
+              <div class="border-bottom mb-2">
+                <input
+                  class="border-0 w-100 py-3 fs-4"
+                  id="Email"
+                  name="Email"
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <!-- PHONE NUMBER -->
+              <div class="border-bottom mb-2">
+                <input
+                  class="border-0 w-100 py-3 fs-4"
+                  id="Phone"
+                  name="Phone"
+                  type="text"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <!-- MESSAGE -->
+              <div class="border-bottom mb-2">
+                <textarea
+                  class="border-0 w-100 py-3 fs-4"
+                  name="Message"
+                  id="Message"
+                  cols="30"
+                  rows="6"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <!-- BUTTON -->
+              <div class="send">
+                <button type="submit" class="btn btn-outline-light btn-lg">
+                  Send
+                </button>
+              </div>
             </form>
-            <div class="form-floating">
-              <textarea class="form-control" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Phone Number</label>
-            </div>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                id="floatingTextarea2"
-                style="height: 150px"
-              ></textarea>
-              <label for="floatingTextarea2">Message</label>
-            </div>
-          </div>
-          <div class="send">
-            <button type="button" class="btn btn-success">Send</button>
           </div>
         </div>
       </div>
@@ -176,58 +208,64 @@
     <!-- FOOTER TOP -->
     <section class="py-4 text-white text-center" id="footer-top">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <h3>LOCATION</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="row justify-content-center">
+          <div class="py-3 col-10 col-md-4">
+            <h4>LOCATION</h4>
+            <p class="h6">2215 John Daniel Drive Clark, MO 54243</p>
           </div>
-          <div class="col-12 col-md-4">
-            <h3>AROUND THE WEB</h3>
-            <ul class="d-flex justify-content-center">
+          <div class="py-3 col-10 col-md-4">
+            <h4>AROUND THE WEB</h4>
+            <ul class="d-flex justify-content-center p-0">
               <li class="px-1">
-                <span class="p-3 border border-1 rounded-circle">
+                <div class="p-2 border border-1 circle">
                   <a href="#">
-                    <i class="h2 fa-brands fa-facebook-f"></i>
+                    <i class="fs-6 fa-brands fa-facebook-f"></i>
                   </a>
-                </span>
+                </div>
               </li>
               <li class="px-1">
-                <span class="p-3 border border-1 rounded-circle">
+                <div class="p-2 border border-1 circle">
                   <a href="#">
-                    <i class="h2 fa-brands fa-google-plus-g"></i>
+                    <i class="fs-6 fa-brands fa-google-plus-g"></i>
                   </a>
-                </span>
+                </div>
               </li>
               <li class="px-1">
-                <span class="p-3 border border-1 rounded-circle">
+                <div class="p-2 border border-1 circle">
                   <a href="#">
-                    <i class="h2 fa-brands fa-twitter"></i>
+                    <i class="fs-6 fa-brands fa-twitter"></i>
                   </a>
-                </span>
+                </div>
               </li>
               <li class="px-1">
-                <span class="p-3 border border-1 rounded-circle">
+                <div class="p-2 border border-1 circle">
                   <a href="#">
-                    <i class="h2 fa-brands fa-linkedin-in"></i>
+                    <i class="fs-6 fa-brands fa-linkedin-in"></i>
                   </a>
-                </span>
+                </div>
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-4">
-            <h3>ABOUT FREELANCER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-              magnam illum harum adipisci quod.
+          <div class="py-3 col-10 col-md-4">
+            <h4>ABOUT FREELANCER</h4>
+            <p class="h6 about_freelancer">
+              Freelance is a free to use, open source Bootstrap theme created by
+              <a
+                class="text-decoration-none"
+                href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                >Start Bootstrap</a
+              >.
             </p>
           </div>
         </div>
       </div>
     </section>
     <!-- FOOTER BOTTOM -->
-    <footer class="py-4 text-white text-center" id="footer-bottom">
+    <footer class="py-4 text-center" id="footer-bottom">
       <div class="copyright">
-        <a href="#">copyright</a>
+        <a class="h6 text-white text-decoration-none" href="#"
+          >Copyright c Your Website 2019</a
+        >
       </div>
     </footer>
   </body>
